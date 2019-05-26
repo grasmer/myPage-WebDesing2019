@@ -1,0 +1,96 @@
+body{
+    background-color: rgb(71, 204, 175);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:rgb(71, 204, 175);
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows:  auto auto auto;
+    grid-template-areas: "nav"
+                         "section"
+                         "footer";
+}
+
+/*
+body 166, 255, 236
+nav 45, 128, 110
+section 72, 138, 124
+texto 71, 204, 175
+
+*/
+
+header{
+    grid-area: nav;
+    width: auto;
+}
+
+section{
+    text-align: start;
+    background-color: rgb(72, 138, 124);
+    grid-area: section;
+    margin: 20px;
+    
+}
+
+#barNav ul{/*fondo barra nav*/
+    background-color: rgb(45, 128, 110);
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-content: space-around;
+    width: auto;
+    border-radius: 20px 20px 0px 0px
+}
+
+
+#barNav ul li a{
+    color: rgb(89, 255, 219);/*Color texto navbar*/
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    
+}
+/*color puntero en navbar*/
+#barNav ul li a:hover{
+    color: rgb(71, 204, 175);
+    background-color: rgb(45, 128, 110);
+}
+
+#prinD3{
+    background-color: rgb(72, 138, 124);
+    border-radius: 20px 20px 20px 20px;
+    border: 2px dotted rgb(71, 204, 175) ;
+}
+
+.barras div{
+    display: inline-block;
+    font-size: 10px;
+    background-color: orange;
+    text-align: right;
+    padding: 3px;
+    margin: 1px;
+    color: white;
+
+
+}
+
+.barra{
+    font-size: auto;
+    width: 25px;
+    height: 100px;
+    margin-right: 3px;
+    display: inline-block;
+    background-color: green;
+    color: white;
+}
+
+#graficas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+
